@@ -12,3 +12,6 @@ The Following is a list of all concepts, tools, and frameworks I learned during 
 - ES6 modules
 
 ## How to run
+1. Clone the repository and navigate to the Forkify Folder
+2. `npm install`
+3. `npm run start`
