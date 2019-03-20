@@ -7,7 +7,7 @@ export const clearInput = () => {
 };
 
 export const clearResults = () => {
-    elements.searchResultList.innerHTML = '';
+    elements.searchResList.innerHTML = '';
     elements.searchResPages.innerHTML = '';
 };
 
@@ -48,7 +48,7 @@ const renderRecipe = recipe => {
             </a>
         </li>
     `;
-    elements.searchResultList.insertAdjacentHTML("beforeend", markup)
+    elements.searchResList.insertAdjacentHTML("beforeend", markup)
 };
 
 const createButton = (page, type) => `

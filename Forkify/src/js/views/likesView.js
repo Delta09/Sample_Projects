@@ -2,9 +2,9 @@ import { elements } from './base';
 import { limitRecipeTitle } from './searchView';
 
 export const toggleLikeBtn = isLiked => {
-    //img/icons.svg#icon-heart-outlined
-    const iconString = isLiked ? 'icon-heart' : 'icon-heart-outlined'
+    const iconString = isLiked ? 'icon-heart' : 'icon-heart-outlined';
     document.querySelector('.recipe__love use').setAttribute('href', `img/icons.svg#${iconString}`);
+    // icons.svg#icon-heart-outlined
 };
 
 export const toggleLikeMenu = numLikes =>{
@@ -25,7 +25,7 @@ export const renderLike = like => {
         </a>
     </li>
     `;
-    elements.likesList.insertAdjacentHTML('beforeenmd', markup);
+    elements.likesList.insertAdjacentHTML('beforeend', markup);
 };
 
 export const deleteLike = id => {
